@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlappyShark-WingDown_0: 6224172482786899245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
