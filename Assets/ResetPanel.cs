@@ -3,6 +3,7 @@ using PrimeTween;
 using UnityEngine;
 using UnityEngine.UI;
 
+[DefaultExecutionOrder(-10000)]
 public class ResetPanel : MonoBehaviour
 {
     [SerializeField] private Image _panel;
@@ -40,6 +41,7 @@ public class ResetPanel : MonoBehaviour
     {
         _panel.raycastTarget = true;
         yield return Tween.Alpha(_panel, _fadeOutSettings).ToYieldInstruction();
+        Debug.LogWarning("Faded out");
         onFadedOut?.Invoke();
     }
 

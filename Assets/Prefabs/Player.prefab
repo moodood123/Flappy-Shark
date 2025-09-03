@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7134336765577909565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -177,8 +177,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1917716779
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 6224172482786899245, guid: 87a25d8519d110441ada4ab8b0590e9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -494,6 +494,7 @@ GameObject:
   - component: {fileID: 6092873993875866036}
   - component: {fileID: 8828454285108137459}
   - component: {fileID: 1074925234626540742}
+  - component: {fileID: 1476280146138734750}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -593,7 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43fefb543add9f478925929a78a6d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 5
+  _jumpForce: 3
   _playerUi: {fileID: 2056713806678834098}
   _scoreText: {fileID: 4267000683368638895}
 --- !u!114 &1074925234626540742
@@ -626,3 +627,42 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1476280146138734750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718271614687631323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9719e60e3e41544bbf93a387d8fb476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speedToAngleRelation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -10
+      value: -10.000009
+      inSlope: -0.019039383
+      outSlope: -0.019039383
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.19532424
+    - serializedVersion: 3
+      time: 10
+      value: 10
+      inSlope: 0.01154201
+      outSlope: 0.01154201
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5597575
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _magnitude: 5
+  _rb: {fileID: 6092873993875866036}
+  _target: {fileID: 5138728551152173260}

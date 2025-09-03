@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     private void StopPlayer()
     {
         _rb.bodyType = RigidbodyType2D.Static;
-        _playerUi.SetActive(false);
+        //_playerUi.SetActive(false);
 
 
         StartCoroutine(ResetPlayer());
@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ResetPlayer()
     {
+        ScoreManager.TrySetHighScore(_points);
         onPlayerDeath?.Invoke();
         yield return ResetPanel.Instance.WaitForFadeOut();
 
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         
         _scoreText.gameObject.SetActive(false);
-        
+
         _points = 0;
         _scoreText.text = _points.ToString();
         
