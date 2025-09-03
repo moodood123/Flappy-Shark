@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{df28088b-1f48-406a-af4d-1e3614ebe759}">
+		<property name="assetPath">
+			<value>sound-effect-twinklesparkle-115095.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.0375510204081633</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ee465b9b-6c93-429c-87e6-5fc7c81aab72}</destination>
+		</relationship>
+	</object>
+</objects>

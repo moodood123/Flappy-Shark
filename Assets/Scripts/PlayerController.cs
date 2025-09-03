@@ -2,6 +2,7 @@ using System.Collections;
 using PrimeTween;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -11,6 +12,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _jumpForce = 5f;
     [SerializeField] private GameObject _playerUi;
     [SerializeField] private TextMeshProUGUI _scoreText;
+
+    [Header("Events")] 
+    [SerializeField] private UnityEvent _onJump;
+    [SerializeField] private UnityEvent _onImpact;
+    [SerializeField] private UnityEvent _onScore;
     
     private Rigidbody2D _rb;
 
@@ -57,6 +63,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ResetPlayer()
     {
+        _onImpact.Invoke();
         ScoreManager.TrySetHighScore(_points);
         onPlayerDeath?.Invoke();
         yield return ResetPanel.Instance.WaitForFadeOut();
@@ -76,11 +83,14 @@ public class PlayerController : MonoBehaviour
     {
         _points += amount;
         _scoreText.text = _points.ToString();
+        _onScore?.Invoke();
     }
     
     public void OnJump()
     {
+        if (_rb.bodyType != RigidbodyType2D.Dynamic) return; 
         //_rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
         _rb.linearVelocityY = _jumpForce;
+        _onJump?.Invoke();
     }
 }
