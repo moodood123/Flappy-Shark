@@ -5,7 +5,7 @@ public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _obstaclePrefab;
 
-    [SerializeField] private float _spawnInterval = 10f;
+    [SerializeField] private Vector2 _spawnIntervalRange = new Vector2(1f, 2f);
     [SerializeField] private float _spawnPosition = 12f;
     [SerializeField] private float _endPosition = -12f;
     [SerializeField] private float _duration = 2f;
@@ -41,7 +41,7 @@ public class ObstacleSpawner : MonoBehaviour
         while (true)
         {
             SpawnObstacle();
-            yield return new WaitForSeconds(_spawnInterval);
+            yield return new WaitForSeconds(Random.Range(_spawnIntervalRange.x, _spawnIntervalRange.y));
         }
     }
 
