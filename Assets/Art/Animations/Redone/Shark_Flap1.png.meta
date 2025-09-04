@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shark_Flap1_0: -5921186956336456243
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

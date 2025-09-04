@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shark_Flap3_0: 5182650273577459241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
