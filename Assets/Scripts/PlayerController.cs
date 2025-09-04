@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _jumpForce = 5f;
     [SerializeField] private GameObject _playerUi;
     [SerializeField] private TextMeshProUGUI _scoreText;
+    [SerializeField] private GameObject _scorePanel;
 
     [Header("Events")] 
     [SerializeField] private UnityEvent _onJump;
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
         _rb.bodyType = RigidbodyType2D.Dynamic;
         _playerUi.SetActive(true);
 
-        _scoreText.gameObject.SetActive(true);
+        _scorePanel.gameObject.SetActive(true);
     }
 
     private void StopPlayer()
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
         transform.position = new Vector2(transform.position.x, 0f);
         transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         
-        _scoreText.gameObject.SetActive(false);
+        _scorePanel.gameObject.SetActive(false);
 
         _points = 0;
         _scoreText.text = _points.ToString();

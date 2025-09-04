@@ -134,7 +134,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 6281063025735672355}
   cacheVersion: 131849
-  cacheTime: 638924980585666473
+  cacheTime: 638925140453401147
   SerializableEventsDict:
   - key: event:/Impact
     index: 0
@@ -159,10 +159,10 @@ MonoBehaviour:
   Path: FMODProject_FlappyShark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638924980585666473
+  lastModified: 638925140453401147
   FileSizes:
   - Name: Desktop
-    Value: 122624
+    Value: 122752
   Exists: 1
 --- !u!114 &6281063025735672355
 MonoBehaviour:
@@ -179,8 +179,8 @@ MonoBehaviour:
   Path: FMODProject_FlappyShark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638924980585666473
+  lastModified: 638925140453401147
   FileSizes:
   - Name: Desktop
-    Value: 896
+    Value: 944
   Exists: 1
