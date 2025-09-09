@@ -384,7 +384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &140926049
 Transform:
   m_ObjectHideFlags: 0
@@ -6640,8 +6640,9 @@ GameObject:
   - component: {fileID: 1934129605}
   - component: {fileID: 1934129607}
   - component: {fileID: 1934129606}
+  - component: {fileID: 1934129608}
   m_Layer: 5
-  m_Name: HighscorePanel (1)
+  m_Name: HighscorePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6706,6 +6707,213 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934129604}
   m_CullTransparentMesh: 1
+--- !u!114 &1934129608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934129604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496665491f7807f45a94b1278a8e3ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveXSettings:
+    startFromCurrent: 0
+    startValue: -50
+    endValue: -60
+    settings:
+      duration: 10
+      ease: -1
+      customEase:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: -0
+          value: -0.00000352785
+          inSlope: 7.52201
+          outSlope: 7.52201
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.12023697
+        - serializedVersion: 3
+          time: 0.25
+          value: 0.99999917
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.5
+          value: -0.0009277612
+          inSlope: -5.6594377
+          outSlope: -5.6594377
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.75
+          value: -1.00001
+          inSlope: 0.009323472
+          outSlope: 0.009323472
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.73116857
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: -0.0000003958121
+          inSlope: 5.441261
+          outSlope: 5.441261
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.168062
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      cycles: 1
+      cycleMode: 0
+      startDelay: 0
+      endDelay: 0
+      useUnscaledTime: 0
+      _useFixedUpdate: 0
+      _updateType: 0
+  _moveYSettings:
+    startFromCurrent: 0
+    startValue: 0
+    endValue: 15
+    settings:
+      duration: 15
+      ease: -1
+      customEase:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: -0.00000352785
+          inSlope: 7.52201
+          outSlope: 7.52201
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.12023697
+        - serializedVersion: 3
+          time: 0.25
+          value: 0.99999917
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.5
+          value: -0.0009277612
+          inSlope: -5.6594377
+          outSlope: -5.6594377
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.75
+          value: -1.00001
+          inSlope: 0.009323472
+          outSlope: 0.009323472
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.73116857
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: -0.0000003958121
+          inSlope: 5.441261
+          outSlope: 5.441261
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.168062
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      cycles: 1
+      cycleMode: 0
+      startDelay: 0
+      endDelay: 0
+      useUnscaledTime: 0
+      _useFixedUpdate: 0
+      _updateType: 0
+  _rotateSettings:
+    startFromCurrent: 0
+    startValue: {x: 0, y: 0, z: 0, w: 0}
+    endValue: {x: 0, y: 0, z: 0.043619387, w: 0.99904823}
+    settings:
+      duration: 20
+      ease: -1
+      customEase:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: -0.00000352785
+          inSlope: 7.52201
+          outSlope: 7.52201
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.12023697
+        - serializedVersion: 3
+          time: 0.25
+          value: 0.99999917
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.5
+          value: -0.0009277612
+          inSlope: -5.6594377
+          outSlope: -5.6594377
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.75
+          value: -1.00001
+          inSlope: 0.009323472
+          outSlope: 0.009323472
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.73116857
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: -0.0000003958121
+          inSlope: 5.441261
+          outSlope: 5.441261
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.168062
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      cycles: 1
+      cycleMode: 0
+      startDelay: 0
+      endDelay: 0
+      useUnscaledTime: 0
+      _useFixedUpdate: 0
+      _updateType: 0
 --- !u!1 &1987457701
 GameObject:
   m_ObjectHideFlags: 0
