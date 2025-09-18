@@ -16,6 +16,11 @@ public class MenuController : MonoBehaviour
     public delegate void OnStartGame();
     public static event OnStartGame onStartGame;
 
+    private void Awake()
+    {
+        _scoreText.text = ScoreManager.HighScore.ToString();
+    }
+    
     private void OnEnable()
     {
         ResetPanel.Instance.onFadedOut += Reset;

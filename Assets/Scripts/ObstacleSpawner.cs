@@ -17,12 +17,14 @@ public class ObstacleSpawner : MonoBehaviour
     private void OnEnable()
     {
         MenuController.onStartGame += StartSpawning;
+        MultiplayerMenuController.onStartGame += StartSpawning;
         PlayerController.onPlayerDeath += EndSpawning;
     }
 
     private void OnDisable()
     {
         MenuController.onStartGame -= StartSpawning;
+        MultiplayerMenuController.onStartGame -= StartSpawning;
         PlayerController.onPlayerDeath -= EndSpawning;
     }
     

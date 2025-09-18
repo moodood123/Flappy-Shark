@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 15003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: New iOS Profile
+  m_Name: New iOS Profile 1
   m_EditorClassIdentifier: 
   m_AssetVersion: 1
   m_BuildTarget: 9
@@ -35,7 +35,7 @@ MonoBehaviour:
     - line: '|   useOnDemandResources: 0'
     - line: '|   accelerometerFrequency: 60'
     - line: '|   companyName: SamDePaiva'
-    - line: '|   productName: FlappyShark'
+    - line: '|   productName: DreamyShark'
     - line: '|   defaultCursor: {instanceID: 0}'
     - line: '|   cursorHotspot: {x: 0, y: 0}'
     - line: '|   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b:
@@ -192,7 +192,7 @@ MonoBehaviour:
     - line: '|     Android: com.DefaultCompany.com.unity.template.mobile2D'
     - line: '|     Lumin: com.DefaultCompany.com.unity.template.mobile2D'
     - line: '|     Standalone: com.DefaultCompany.com.unity.template.mobile2D'
-    - line: '|     iPhone: com.SamDePaiva.FlappyShark'
+    - line: '|     iPhone: com.SamDePaiva.DreamyShark'
     - line: '|     tvOS: com.DefaultCompany.com.unity.template.mobile2D'
     - line: '|   buildNumber:'
     - line: '|     Standalone: 0'
@@ -1040,8 +1040,8 @@ MonoBehaviour:
     - rid: 3832251697565532160
       type: {class: iOSPlatformSettings, ns: UnityEditor.iOS, asm: UnityEditor.iOS.Extensions}
       data:
-        m_Development: 1
-        m_ConnectProfiler: 1
+        m_Development: 0
+        m_ConnectProfiler: 0
         m_BuildWithDeepProfilingSupport: 0
         m_AllowDebugging: 0
         m_WaitForManagedDebugger: 0
@@ -1049,9 +1049,9 @@ MonoBehaviour:
         m_ExplicitNullChecks: 0
         m_ExplicitDivideByZeroChecks: 0
         m_ExplicitArrayBoundsChecks: 0
-        m_CompressionType: 2
+        m_CompressionType: 3
         m_InstallInBuildFolder: 0
-        m_iOSXcodeBuildConfig: 0
+        m_iOSXcodeBuildConfig: 1
         m_SymlinkSources: 0
         m_PreferredXcode: 
         m_SymlinkTrampoline: 0

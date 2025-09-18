@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 091d8b1850dee154da69e19e0cd915de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 3
+  _duration: 2.5
   _tileGroup: {fileID: 5085600049946168291}
   _tileCount: 10
   _tileExample: {fileID: 3178237493546730047}
