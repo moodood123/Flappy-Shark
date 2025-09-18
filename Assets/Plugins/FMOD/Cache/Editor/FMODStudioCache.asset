@@ -128,13 +128,14 @@ MonoBehaviour:
   - {fileID: -6294496114502024290}
   - {fileID: -4211413592160408422}
   - {fileID: -4023604433530513215}
+  - {fileID: 1812664252280698748}
   EditorParameters: []
   MasterBanks:
   - {fileID: 30966042940509225}
   StringsBanks:
   - {fileID: 6281063025735672355}
   cacheVersion: 131849
-  cacheTime: 638925140453401147
+  cacheTime: 638937999608803725
   SerializableEventsDict:
   - key: event:/Impact
     index: 0
@@ -159,11 +160,38 @@ MonoBehaviour:
   Path: FMODProject_FlappyShark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638925140453401147
+  lastModified: 638937999608793678
   FileSizes:
   - Name: Desktop
-    Value: 122752
+    Value: 4911680
   Exists: 1
+--- !u!114 &1812664252280698748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BackgroundMusic
+  m_EditorClassIdentifier: 
+  Path: event:/BackgroundMusic
+  Guid:
+    Data1: 110013823
+    Data2: 1248580309
+    Data3: -1417131632
+    Data4: 766762861
+  Banks:
+  - {fileID: 30966042940509225}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 410256
 --- !u!114 &6281063025735672355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +207,8 @@ MonoBehaviour:
   Path: FMODProject_FlappyShark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638925140453401147
+  lastModified: 638937999608803725
   FileSizes:
   - Name: Desktop
-    Value: 944
+    Value: 990
   Exists: 1
