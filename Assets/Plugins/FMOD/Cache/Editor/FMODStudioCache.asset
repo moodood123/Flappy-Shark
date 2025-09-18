@@ -135,7 +135,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 6281063025735672355}
   cacheVersion: 131849
-  cacheTime: 638937999608803725
+  cacheTime: 638938006557571395
   SerializableEventsDict:
   - key: event:/Impact
     index: 0
@@ -145,6 +145,8 @@ MonoBehaviour:
     index: 2
   - key: event:/Pop
     index: 3
+  - key: event:/BackgroundMusic
+    index: 4
 --- !u!114 &30966042940509225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,10 +162,10 @@ MonoBehaviour:
   Path: FMODProject_FlappyShark/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638937999608793678
+  lastModified: 638938006557561404
   FileSizes:
   - Name: Desktop
-    Value: 4911680
+    Value: 4911808
   Exists: 1
 --- !u!114 &1812664252280698748
 MonoBehaviour:
@@ -187,7 +189,7 @@ MonoBehaviour:
   - {fileID: 30966042940509225}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -207,7 +209,7 @@ MonoBehaviour:
   Path: FMODProject_FlappyShark/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638937999608803725
+  lastModified: 638938006557571395
   FileSizes:
   - Name: Desktop
     Value: 990

@@ -22,11 +22,6 @@ public class ResetPanel : MonoBehaviour
         else if (Instance != this) Destroy(this);
     }
 
-    private void Start()
-    {
-        WaitForFadeIn();
-    }
-
     public Coroutine WaitForFadeOut()
     {
         return StartCoroutine(FadeOutSequence());
