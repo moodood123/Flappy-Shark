@@ -19,6 +19,7 @@ public class ObstacleSpawner : MonoBehaviour
         MenuController.onStartGame += StartSpawning;
         MultiplayerMenuController.onStartGame += StartSpawning;
         PlayerController.onPlayerDeath += EndSpawning;
+        GameModeManager.OnEndGame += EndSpawning;
     }
 
     private void OnDisable()
@@ -26,6 +27,7 @@ public class ObstacleSpawner : MonoBehaviour
         MenuController.onStartGame -= StartSpawning;
         MultiplayerMenuController.onStartGame -= StartSpawning;
         PlayerController.onPlayerDeath -= EndSpawning;
+        GameModeManager.OnEndGame -= EndSpawning;
     }
     
     private void StartSpawning()

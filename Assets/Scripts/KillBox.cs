@@ -19,7 +19,7 @@ public class KillBox : MonoBehaviour
             Debug.LogWarning("Player hit");
         }
 
-        if (other.TryGetComponent(out SharkController shark))
+        if (other.TryGetComponent(out SharkController shark) && !shark.IsTimedOut)
         {
             onSharkHit?.Invoke(shark, _damage);
             Debug.LogWarning("Shark hit");

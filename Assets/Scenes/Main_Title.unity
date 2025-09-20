@@ -6915,7 +6915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1586641493
@@ -7052,9 +7052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CHARACTER ARTIST
-
-    GAME DESIGNER'
+  m_text: "CHARACTER ARTIST\nENVIRONMENT \nARTIST"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a1d75b9e149d784b943f87661c0ebb3, type: 2}
   m_sharedMaterial: {fileID: -6062288290147644952, guid: 6a1d75b9e149d784b943f87661c0ebb3, type: 2}
@@ -7752,7 +7750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1819188424
