@@ -6,13 +6,21 @@ using UnityEngine.UI;
 public class VolumeSlider : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
-    [SerializeField] private string _vcaPath = "vca:/Master";
+    [SerializeField] private string _vcaPath = "vca:/MasterVolume";
     
     private VCA _masterVca;
 
     private void Awake()
     {
         _masterVca = RuntimeManager.GetVCA(_vcaPath);
+    }
+
+    private void Start()
+    {
+        float volume;
+        float finalVolume;
+        _masterVca.getVolume(out volume, out finalVolume);
+        _slider.value = volume * _slider.maxValue;
     }
    
     private void OnEnable()

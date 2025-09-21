@@ -1,6 +1,7 @@
 using PrimeTween;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DoubleFlapManager : GameModeManager
 {
@@ -30,6 +31,12 @@ public class DoubleFlapManager : GameModeManager
     [SerializeField] private TweenSettings<float> _hideElementSettings;
     [SerializeField] private TweenSettings<float> _showElementSettings;
     [SerializeField] private TweenSettings _moveWinnerSettings;
+
+    [Header("Events")] 
+    [SerializeField] private UnityEvent _onGameStart;
+    [SerializeField] private UnityEvent _onGameEnd;
+    [SerializeField] private UnityEvent _onPointGained;
+    [SerializeField] private UnityEvent _onPointsLost;
     
     private int _player1Score;
     private int _player2Score;
@@ -110,6 +117,8 @@ public class DoubleFlapManager : GameModeManager
 
     private void OnSharkHitObstacle(SharkController shark, int damage)
     {
+        _onPointsLost.Invoke();
+        
         if (_isGameOver) return;
         
         if (shark == _player1)
@@ -129,6 +138,8 @@ public class DoubleFlapManager : GameModeManager
 
     private void OnPointsReceived(int points, SharkController shark)
     {
+        _onPointGained.Invoke();
+        
         if (_isGameOver) return;
         
         if (shark == _player1)

@@ -18,8 +18,6 @@ public class SharkController : MonoBehaviour
     
     [Header("Events")] 
     [SerializeField] private UnityEvent _onJump;
-    [SerializeField] private UnityEvent _onImpact;
-    [SerializeField] private UnityEvent _onScore;
 
     public int Lives { get; private set; }
 

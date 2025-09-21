@@ -574,6 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187140491}
   - component: {fileID: 187140492}
+  - component: {fileID: 187140493}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -653,7 +654,50 @@ MonoBehaviour:
   m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 187140493}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &187140493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187140490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1824080888
+      Data2: 1138554095
+      Data3: 133903263
+      Data4: -581857818
+    Path: event:/Pop
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &223927883
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,6 +918,7 @@ GameObject:
   - component: {fileID: 276139613}
   - component: {fileID: 276139612}
   - component: {fileID: 276139615}
+  - component: {fileID: 276139616}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -957,6 +1002,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 276139616}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &276139613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,6 +1065,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Main_Title
+--- !u!114 &276139616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276139610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1824080888
+      Data2: 1138554095
+      Data3: 133903263
+      Data4: -581857818
+    Path: event:/Pop
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &345196132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,6 +1900,7 @@ GameObject:
   - component: {fileID: 561929610}
   - component: {fileID: 561929609}
   - component: {fileID: 561929608}
+  - component: {fileID: 561929611}
   m_Layer: 5
   m_Name: OptionsButton
   m_TagString: Untagged
@@ -1907,7 +1996,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 561929611}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
         m_Mode: 1
@@ -1957,6 +2046,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561929606}
   m_CullTransparentMesh: 1
+--- !u!114 &561929611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561929606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1824080888
+      Data2: 1138554095
+      Data3: 133903263
+      Data4: -581857818
+    Path: event:/Pop
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &586383065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,6 +3129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 951189783}
   - component: {fileID: 951189782}
+  - component: {fileID: 951189784}
+  - component: {fileID: 951189785}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3155,6 +3277,42 @@ MonoBehaviour:
     useUnscaledTime: 0
     _useFixedUpdate: 0
     _updateType: 0
+  _onGameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  _onGameEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  _onPointGained:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 951189784}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onPointsLost:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 951189785}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &951189783
 Transform:
   m_ObjectHideFlags: 0
@@ -3171,6 +3329,68 @@ Transform:
   - {fileID: 2045907054}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951189784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951189781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1424990035
+      Data2: 1268735817
+      Data3: 541681315
+      Data4: -1670452054
+    Path: event:/CelebratoryChimes
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &951189785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951189781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864565761
+      Data2: 1254605005
+      Data3: 594082988
+      Data4: 295558002
+    Path: event:/Impact
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1013044992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,6 +4193,90 @@ PrefabInstance:
       propertyPath: _inputIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1660350156}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8716261490932125509, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3997,7 +4301,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2700660685590230386, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5698025756523141493, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
     m_AddedGameObjects: []
@@ -5556,6 +5861,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e8e9417628979f43b2961efc53e871d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1660350156 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 454729253604004490, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+  m_PrefabInstance: {fileID: 1303034696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1664057296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5640,6 +5956,7 @@ GameObject:
   - component: {fileID: 1705082203}
   - component: {fileID: 1705082202}
   - component: {fileID: 1705082201}
+  - component: {fileID: 1705082204}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -5662,11 +5979,11 @@ RectTransform:
   - {fileID: 2114670656}
   m_Father: {fileID: 1306068526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 25}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -130}
   m_SizeDelta: {x: 140, y: 50}
-  m_Pivot: {x: 0.5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705082201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5735,7 +6052,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1705082204}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
         m_Mode: 1
@@ -5785,6 +6102,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705082199}
   m_CullTransparentMesh: 1
+--- !u!114 &1705082204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705082199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1824080888
+      Data2: 1138554095
+      Data3: 133903263
+      Data4: -581857818
+    Path: event:/Pop
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1758387509
 GameObject:
   m_ObjectHideFlags: 0
@@ -6857,6 +7205,7 @@ GameObject:
   - component: {fileID: 2044218311}
   - component: {fileID: 2044218310}
   - component: {fileID: 2044218309}
+  - component: {fileID: 2044218312}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -6964,6 +7313,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2044218312}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2044218310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7002,6 +7363,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044218307}
   m_CullTransparentMesh: 1
+--- !u!114 &2044218312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044218307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1824080888
+      Data2: 1138554095
+      Data3: 133903263
+      Data4: -581857818
+    Path: event:/Pop
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2045907053
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,6 +7827,90 @@ PrefabInstance:
       propertyPath: m_ChildControlWidth
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1660350156}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onJump.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onScore.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758536722201460004, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
+      propertyPath: _onImpact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8716261490932125509, guid: 68eb25818ee4c204e8b38c9dc275203e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7459,7 +7935,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
