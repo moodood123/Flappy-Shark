@@ -53,6 +53,7 @@ public class DoubleFlapManager : GameModeManager
         PointTrigger.onSharkPointsWon += OnPointsReceived;
         MultiplayerMenuController.onStartGame += StartGame;
         ResetPanel.Instance.onFadedOut += ResetGame;
+        TargetScoreSetter.onTargetScoreChanged += SetTargetScore;
     }
 
     protected override void OnDisable()
@@ -62,6 +63,7 @@ public class DoubleFlapManager : GameModeManager
         PointTrigger.onSharkPointsWon -= OnPointsReceived;
         MultiplayerMenuController.onStartGame -= StartGame;
         ResetPanel.Instance.onFadedOut -= ResetGame;
+        TargetScoreSetter.onTargetScoreChanged -= SetTargetScore;
     }
 
     protected override void StartGame()
@@ -76,6 +78,8 @@ public class DoubleFlapManager : GameModeManager
 
         _panel1OriginalPosition = _scorePanelPlayer1.anchoredPosition;
         _panel2OriginalPosition = _scorePanelPlayer2.anchoredPosition;
+
+        _menuButton.gameObject.SetActive(true);
     }
 
     protected override void EndGame()
@@ -93,7 +97,18 @@ public class DoubleFlapManager : GameModeManager
         _scorePanelPlayer1.localScale = new Vector3(1f, 1f, 1f);
         _scorePanelPlayer2.localScale = new Vector3(1f, 1f, 1f);
 
+        _menuButton.transform.localScale = new Vector3(1f, 1f, 1f);
+        
         ResetPanel.Instance.WaitForFadeIn();
+    }
+
+    public void EndEarly()
+    {
+        EndGame();
+        
+        _isGameOver = true;
+        
+        if (ResetPanel.Instance) ResetPanel.Instance.WaitForFadeOut();
     }
 
     private void EndGame(SharkController winner)
@@ -113,6 +128,11 @@ public class DoubleFlapManager : GameModeManager
         Tween.Scale(_menuButton, _showElementSettings);
 
         if (ResetPanel.Instance) ResetPanel.Instance.WaitForFadeOut();
+    }
+
+    private void SetTargetScore(int newTargetScore)
+    {
+        _targetScore = newTargetScore;
     }
 
     private void OnSharkHitObstacle(SharkController shark, int damage)
